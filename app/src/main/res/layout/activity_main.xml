@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/dispositivo1"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:id="@+id/linearLayout">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Conectar"
+            android:layout_weight="1"
+            android:id="@+id/btnConectar" /> <!-- botão Conectar e suas propriedades -->
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Desconectar"
+            android:layout_weight="0.83"
+            android:id="@+id/btnDesconectar" /> <!-- aqui termina o primeiro layout que só possui dois botões -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="157dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/sensor2"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.28"
+        android:textSize="40sp"
+        android:theme="@android:style/Animation"
+        android:gravity="center"
+        android:text="99.6"
+        android:visibility="invisible"
+        android:layout_alignBaseline="@+id/sensor2"
+        android:layout_alignBottom="@+id/sensor2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ligar"
+        android:layout_weight="1"
+        android:id="@+id/ligarSensor"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Desligar"
+        android:layout_weight="1"
+        android:id="@+id/desligarSensor"
+        android:layout_alignTop="@+id/ligarSensor"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="157dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/sensor1"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.28"
+        android:textSize="40sp"
+        android:theme="@android:style/Animation"
+        android:gravity="center"
+        android:layout_marginBottom="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
